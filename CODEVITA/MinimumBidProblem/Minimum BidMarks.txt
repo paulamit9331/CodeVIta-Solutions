@@ -1,0 +1,73 @@
+Problem Description:
+
+Consider people calling out bids in different number bases at an auction. Find the minimum bid assuming the following:
+
+1. The bid numbers are in bases that make their respective values minimum. 
+
+2. There is only one minimum value among all the bids.
+
+Constraints
+1. N <= 10
+
+2. Maximum base = 36
+
+3. Symbols used for digits: Base 2: 0, 1
+Base 3: 0, 1, 2
+...
+Base 11: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A
+
+…
+
+Base 36: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+
+4. Face values for symbols: Symbol => Value 0 => 0
+1 => 1
+2 => 2
+….
+9 => 9
+A => 10
+B => 11
+….
+Z => 35
+
+Input Format
+N different numbers in various bases, with numbers delimited by space
+
+Output
+The value in base 10 of the minimum bid.
+
+Test Case
+
+Explanation
+Example 1
+
+Input
+
+11 12
+
+Output
+
+3
+
+Explanation
+
+The value of number represented by 11 is least in base 2 and that least value in base 10 is 3. The least value of the representation 12 is in base 3 and is equal to 5. Since 3 < 5, 3 is the lowest bid and is the output.
+
+Example 2
+
+Input
+
+1Z A L0 17
+
+Output
+
+10
+
+Explanation
+
+The least values are:
+1Z in base 36: 1*36+35 = 71
+A in base 11: 10
+L0 in base 22: 21*22+0 = 462
+17 in base 8: 1*8+7 = 15
+Hence the least bid is 10.

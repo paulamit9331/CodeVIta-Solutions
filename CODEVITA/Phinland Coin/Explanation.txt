@@ -1,0 +1,49 @@
+The answer is log(n)base 2 +1.
+Many of you like me, may scratch your head that how did we get to this conclusion.
+think it in this way,
+how many possible ways are there to create $1 ?
+using 1 coin.
+how many possible ways are there to create $2 ?
+using two one coins or one 2 coin.
+we could have taken two $1 coins also, but we are taking one $2 coin, because we can not repeat coins, rules are rules mate, can’t do much.
+for 3 we can use a single $3 coin, but we can make three from previous available coins without replications.[$1+$2=$3, see a Mathematician here]
+But for $4 we can’t do the same, we need to use either $1 coins 4 times, or $2 coins twice.
+So we introduce $4 coin [BLOODY RULES,].
+with $1 ,$2 and $4 coins we can obtain $5,$6,$7 but for $8 we need to do duplication of at least one coin and that’s against the rules of the game[Don’t curse me, I didn’t make rules].
+from $1, $2, $4, $8 coins we can make $9, $10, $11, $12, $13, $14 and $15, but not $16 without duplicating any of the previous coins.
+So we introduce a $16 coin
+
+Now can you see something?
+1 is 2^0
+2 is 2^1
+4 is 2^2
+8 is 2^3
+16 is 2^4
+
+we are lucky that we have number one with us because we obtain odd numbers from it and for even numbers 2 and its powers are enough.
+
+So, lets take example of hundred.$100
+2^6 is the smallest power of two before the number hundred.
+2^6=64,,,,,,,,,,,,2^7 is 128>100[Mathematician here]
+
+Now we have 100-64=36
+
+2^5=32
+
+36-32=4
+
+2^2=4
+
+so we got hundred with 64 32 and 4, so let us put them in our bag[4,32,64]
+But what about other numbers?
+like we can not get 50 with this?
+Yes, we can not get 50,43, or some random number from 64,32, and 4.
+
+But to get 1 we need 1. so we add 1 to our bag. [1,4,32,64].
+
+What about 2?
+let us put that in our bag as well[1,2,4,32,64]
+we can make 5,6,7 with our bag but we can not make 8, so it us put it there.
+[1,2,4,8,32,64]
+now we can get numbers from 9 to 15,but not 16. No worries let us put that ass well
+[1,2,4,8,16,32,64].
